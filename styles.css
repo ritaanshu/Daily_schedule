@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+
+hr{
+    border: dotted #f2f2f2 6px;
+    border-bottom: none;
+    width: 7%;
+    margin-left: 160px;
+    padding-left: 0px;
+}
+
+
+.white{
+    border: dotted #333 6px;
+    border-bottom: none;
+    width: 7%;
+    margin-left: 160px;
+    padding-left: 0px;
+}
+
+.topnav{
+    background-color: #333;
+    overflow:  hidden;
+    text-align: center;
+    height: 75px;
+}
+
+.topnav a{
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 11px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.right{
+    margin-left: 950px;
+}
+
+.morning{
+    background-color:#F5F5F5;
+    height: 450px;
+    margin-top: 0;
+    padding: 0;
+
+}
+
+.evening{
+    background-color: #333;
+    height: 450px;
+    margin-top: 0;
+    padding: 0;
+    color: #f2f2f2;
+
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column1 {
+    float: right;
+    width: 33.33%;
+    text-align: center;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.text{
+    width:20%;
+    padding-left: 130px;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 26px;
+    padding-top: 10px;
+}
