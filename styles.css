@@ -10,7 +10,6 @@ hr{
     padding-left: 0px;
 }
 
-
 .white{
     border: dotted #333 6px;
     border-bottom: none;
@@ -50,7 +49,7 @@ hr{
 }
 
 .morning{
-    background-color:#F5F5F5;
+    background: color #f2f2f2;;
     height: 450px;
     margin-top: 0;
     padding: 0;
@@ -95,3 +94,20 @@ hr{
     font-size: 26px;
     padding-top: 10px;
 }
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Georgia;
+    color: #f2f2f2;
+    font-size: 18px;
+    background: #333;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover{
+    background: #f2f2f2;
+    color: #333;
+  }
