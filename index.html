@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
     <title>Daily Schedule</title>
+    <script> 
+        function toggleTheme() { 
+            // Obtains an array of all <link> 
+            // elements. 
+            // Select your element using indexing. 
+            var theme = document.getElementsByTagName('link')[0]; 
+
+            // Change the value of href attribute  
+            // to change the css sheet. 
+            if (theme.getAttribute('href') == 'styles.css') { 
+                theme.setAttribute('href', 'dark.css'); 
+            } else { 
+                theme.setAttribute('href', 'styles.css'); 
+            } 
+        } 
+    </script> 
 </head>
 <body id="day">
+
     <div class="topnav" id="day">
         <a href="#day">A (not so) Productive Day</a>
         <a class="right" href="#Morning">Morning</a>
         <a href="#Afternoon">Afternoon</a>
         <a href="#Night">Night</a>
     </div>
-
     <div class="morning" id="Morning">
         <div class="column"><p></p><p class="text">4 AM <hr class="white"> <p class="text">Usually the time I "THINK" about going to sleep</p></div>
         <div class="column"><p class="text">CLASSES Usually I miss the <p class="text">9AM <hr class="white"> <p class="text"> morning classes and my breakfast</p></div>
@@ -35,6 +51,10 @@
         <div class="column"><p class="text">Then I sit down to study <p class="text">12AM <hr class="white"> <p class="text">and after procrastinating for an hour, i do study</p></div>
         <div class="column"><p class="text">After Studying for a LITTLE while I watch something on Netflix and thats basically it<p class="text"> 12AM<hr class="white"></p></div>
     </div>
+
+    <center>
+        <button onclick="toggleTheme()" class="btn">Mode</button>
+    </center>
     
 </body>
 </html>
